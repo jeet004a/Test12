@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iNeuron.ai</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</head>
+<body>
+      
+        <nav id="main-nav">
+            <nav id="nav-1">
+                <div class="nav-logo">
+                    <img src="/static/image/Icons/ineuron-logo.png" alt="logo">
+                </div>
+                <div class="nav-search">
+                    <img src="/static/image/Icons/search1.svg" alt="search">
+                    <input type="text" class="nav-input" placeholder="What do you want to learn">
+                    <button>Search</button>
+                </div>
+    {% comment %} login_staff
+                <div class="nav-login">
+                    <p><a href="{% url 'register' %}">Sign up</a></p>
+                    <button id="sign-in"><a href="{% url 'login_page' %}">Sign in</a></button>
+                </div> {% endcomment %}
+            </nav>
+            <nav class="nav-2">
+                <ul class="nav-items">
+                    <li class="nav-item"><a href="">Courses</a></li>
+                    <li class="nav-item">One Neuron</li>
+                    <li class="nav-item">Job Portal</li>
+                    <li class="nav-item">Internship Portal</li>
+                    <li class="nav-item">Become an affiliate</li>
+                    <li class="nav-item">hall of fame</li>
+                    <li class="nav-item">Blog</li>
+                    <li class="nav-item">Company</li>
+                </ul>
+            </nav>
+        </nav>
+
+            <div class="container-1">
+              
+              <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="false">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="/static/image/main-pics/6.png" class="d-block w-100" alt="...">
+                    
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/static/image/main-pics/7.png" class="d-block w-100" alt="...">
+                    
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/static/image/main-pics/8.png" class="d-block w-100" alt="...">
+                    
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          <div class="our-products">
+            <h1 id="products">Our <span>Products</span></h1>
+            <div class="products-main">
+                
+                <div class="cards">
+                    
+                    <div class="card-image">
+                        <img src="/static/image/Products/affilitatePortal-icon.svg" alt="Blank">
+                    </div>
+        
+                    <div class="card-title">
+                        <h1>Become an affiliate</h1>
+                    </div>
+        
+                    <div class="card-desc">
+                        <p>Explore affiliate marketing opportunities with iNeuron and attain financial freedom.</p>
+                    </div>
+        
+                </div>
+        
+        
+            
+                
+                <div class="cards">
+                    
+                    <div class="card-image">
+                        <img src="/static/image/Products/Internship-icon.svg" alt="Blank">
+                    </div>
+        
+                    <div class="card-title">
+                        <h1>Internship portal</h1>
+                    </div>
+        
+                    <div class="card-desc">
+                        <p>iNeuron's self-paced internship portal prioritises hands-on training with 570+ internship projects.</p>
+                    </div>
+        
+                </div>
+        
+                <div class="cards">
+                    
+                    <div class="card-image">
+                        <img src="/static/image/Products/jobPortal-icon.svg" alt="Blank">
+                    </div>
+        
+                    <div class="card-title">
+                        <h1>Job Portal</h1>
+                    </div>
+        
+                    <div class="card-desc">
+                        <p>Use exceptional templates for a stand-out resume minus the sign up process.</p>
+                    </div>
+        
+                </div>
+            </div>
+        
+            <div class="products-main-2">
+                <div class="cards-2">
+                    
+                    <div class="card-image">
+                        <img src="/static/image/Products/blog-icon.svg" alt="Blank">
+                    </div>
+        
+                    <div class="card-title">
+                        <h1>InBlog</h1>
+                    </div>
+        
+                    <div class="card-desc">
+                        <p>Explore all you want about your favourite courses.</p>
+                    </div>
+        
+                </div>
+        
+                <div class="cards-2">
+                    
+                    <div class="card-image">
+                        <img src="/static/image/Products/halloffame-icon.svg" alt="Blank">
+                    </div>
+        
+                    <div class="card-title">
+                        <h1>Hall of fame</h1>
+                    </div>
+        
+                    <div class="card-desc">
+                        <p>Our student placements and 10+ career transitions speak volumes about our courses.</p>
+                    </div>
+        
+                </div>
+            </div>
+          </div>
+
+
+          <div class="achivers">
+            <h1>Our <span>Achiver's</span> Work with</h1>
+            <section class="achivers-logo slider">
+              <div class="slide"><img src="/static/image/achivers/1.png"  alt=""></div>
+              <div class="slide"><img src="/static/image/achivers/2.png"  alt=""></div>
+              <div class="slide"><img src="/static/image/achivers/3.png" alt=""></div>
+              <div class="slide"><img src="/static/image/achivers/4.png" alt=""></div>
+              <div class="slide"><img src="/static/image/achivers/5.png"   alt=""></div>
+              <div class="slide"><img src="/static/image/achivers/6.png"  alt=""></div>
+              <div class="slide"><img src="/static/image/achivers/7.png"  alt=""></div>
+              <div class="slide"><img src="/static/image/achivers/8.png"  alt=""></div>
+              <div class="slide"><img src="/static/image/achivers/9.png"  alt=""></div>
+              <div class="slide"><img src="/static/image/achivers/10.png"  alt=""></div>
+            </section>
+      
+          </div>
+
+          <footer class="text-white body-font bg-black ">
+            <div class="container px-5 py-24 mx-auto">
+              <div class="flex flex-wrap md:text-left text-center -mb-10 -mx-4">
+                <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+                  <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">ONLINE STORE</h2>
+                  <nav class="list-none mb-10">
+                    <li>
+                      <a class="text-white">Sell online</a>
+                    </li>
+                    <li>
+                      <a class="text-white">Features</a>
+                    </li>
+                    <li>
+                      <a class="text-white">Examples</a>
+                    </li>
+                    <li>
+                      <a class="text-white">Website builder</a>
+                    </li>
+                    <li>
+                      <a class="text-white">Online retail</a>
+                    </li>
+                  </nav>
+                </div>
+                <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+                  <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">hello</h2>
+                  <nav class="list-none mb-10">
+                    <li>
+                      <a class="text-white">Ecommerce website</a>
+                    </li>
+                    <li>
+                      <a class="text-white">Domain names</a>
+                    </li>
+                    <li>
+                      <a class="text-white">Themes</a>
+                    </li>
+                    <li>
+                      <a class="text-white">Shopping cart</a>
+                    </li>
+                    <li>
+                      <a class="text-white">Ecommerce hosting</a>
+                    </li>
+                  </nav>
+                </div>
+                <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+                  <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">hello</h2>
+                  <nav class="list-none mb-10">
+                    <li>
+                      <a class="text-white-400">Mobile commerce</a>
+                    </li>
+                    <li>
+                      <a class="text-white-400">Ecommerce software</a>
+                    </li>
+                    <li>
+                      <a class="text-white-400">Online store builder</a>
+                    </li>
+                    <li>
+                      <a class="text-white-400">Dropshipping Buisness</a>
+                    </li>
+                    <li>
+                      <a class="text-white-400">Store themes</a>
+                    </li>
+                  </nav>
+                </div>
+                <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+                  <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">POINT OF SALE</h2>
+                  <nav class="list-none mb-10">
+                    <li>
+                      <a class="text-white-400">Point of sale</a>
+                    </li>
+                    <li>
+                      <a class="text-white-400">Features</a>
+                    </li>
+                   
+                  </nav>
+                </div>
+                <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+                  <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">SUPPORT <h2>
+                  <nav class="list-none mb-10">
+                    <li>
+                      <a class="text-white-400">24/7 support</a>
+                    </li>
+                    <li>
+                      <a class="text-white-400">Shopify Help Center</a>
+                    </li>
+                    <li>
+                      <a class="text-white-400">Shopify community</a>
+                    </li>
+                    <li>
+                      <a class="text-white-400">API documentation</a>
+                    </li>
+                    <li>
+                      <a class="text-white-400">free tools</a>
+                    </li>
+                    <li>
+                      <a class="text-white-400">Free stock photos</a>
+                    </li>
+                    <li>
+                      <a class="text-white-400">Website for sale</a>
+                    </li>
+                    <li>
+                      <a class="text-white-400">Logo Maker</a>
+                    </li>
+                    <li>
+                      <a class="text-white-400">Business name generator</a>
+                    </li>
+                    <li>
+                      <a class="text-white-400">Research</a>
+                    </li>
+                    <li>
+                      <a class="text-white-400">Legal</a>
+                    </li>
+                    
+                  </nav>
+                </div>
+                <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+                  <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">SHOPIFY</h2>
+                  <nav class="list-none mb-10">
+                    <li>
+                      <a class="text-white-400">Contact</a>
+                    </li>
+                    <li>
+                      <a class="text-white-400">Partner program</a>
+                    </li>
+                    <li>
+                      <a class="text-white-400">Affiliate program</a>
+                    </li>
+                    <li>
+                      <a class="text-white-400">App developer </a>
+                    </li>
+                    <li>
+                      <a class="text-white-400">Investor </a>
+                    </li>
+                    <li>
+                      <a class="text-white-400">Blog topics</a>
+                    </li>
+                  </nav>
+                </div>
+              </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+          <script type="text/javascript">
+                $('.slider').slick({
+                dots: false,
+                infinite: true,
+                
+                autoplay: true,
+                autoplaySpeed: 1500,
+                pauseOnHover: false,
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                responsive: [
+                  {
+                    breakpoint: 1024,
+                    settings: {
+                      slidesToShow: 3,
+                      slidesToScroll: 1,
+                      infinite: true,
+                      dots: true
+                    }
+                  },
+                  {
+                    breakpoint: 900,
+                    settings: {
+                      slidesToShow: 2,
+                      slidesToScroll: 1
+                    }
+                  },
+                  {
+                    breakpoint: 550,
+                    settings: {
+                      slidesToShow: 1,
+                      slidesToScroll: 1
+                    }
+                  }
+                  // You can unslick at a given breakpoint now by adding:
+                  // settings: "unslick"
+                  // instead of a settings object
+                ]
+              });
+          </script> 
+        
+</body>
+</html>
